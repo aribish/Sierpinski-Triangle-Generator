@@ -1,2 +1,2 @@
 # Sierpinski-Triangle-Generator
-A simple, yet ineffective and poorly made fractal generator
+A simple, colorful fractal generator
