@@ -7,4 +7,4 @@ A simple, colorful fractal generator.
 * Press `1... 10` while no fractal is on screen to change the color of the fractal.
 
 ## Dependencies
-To compile and run this program, you must have `g++`, `make`, and the SFML library installed.
+To compile with `make`, SFML must be installed. (`sudo pacman -S sfml` or `sudo apt-get install libsfml-dev`)
