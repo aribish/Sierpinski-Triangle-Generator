@@ -77,7 +77,9 @@ if (genCount == -1 && genSideLength == -1)
 
 void setupGuideText()
 {
-    std::cout << "font file load status: " << gillSans.loadFromFile("gillsans.ttf") << '\n';
+    if(!gillSans.loadFromFile("src/gillsans.ttf"))
+	std::cout << "Please run the program from within the project folder. I'm too lazy to fix this problem right now, I got shit to do :/";
+
     guideText = sf::Text("          Press [SPACE] to watch the fractal grow!\nPress a number key right now to change fractal color!\n                           Press [R] to reset!", gillSans);
     guideText.setFillColor(sf::Color::Black);
     guideText.setPosition(sf::Vector2f(144, 320));
@@ -99,7 +101,7 @@ void resetProgram()
 
 void init()
 {
-    window.create(sf::VideoMode(960, 960), "The Bad Sierpinksi Triangle Generator | by Air Boigus", sf::Style::Default);
+    window.create(sf::VideoMode(960, 960), "Sierpinksi Triangle Generator", sf::Style::Default);
 
     window.clear(sf::Color::White);
     setupGuideText();
