@@ -3,7 +3,7 @@ A simple, colorful fractal generator.
 
 ## Controls
 * Press `space` to show the next generation of the fractal.
-* Press `r` to delete the fractal.
+* Press `r` to reset the fractal.
 * Press `0... 9` while no fractal is on screen to change the color of the fractal.
 
 ## Dependencies
